@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesse Nehemiah Onyango | Software Engineer</title>
+  <meta name="description" content="Portfolio of Jesse Nehemiah Onyango, a Software Engineer and Full Stack Developer based in Kiambu, Kenya. Specializes in React, Next.js, Flask, and more.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com/">
+  <meta property="og:title" content="Jesse Nehemiah Onyango | Software Engineer">
+  <meta property="og:description" content="Portfolio of Jesse Nehemiah Onyango, a Software Engineer and Full Stack Developer based in Kiambu, Kenya.">
+  <meta property="og:image" content="https://yourwebsite.com/mime.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourwebsite.com/">
+  <meta property="twitter:title" content="Jesse Nehemiah Onyango | Software Engineer">
+  <meta property="twitter:description" content="Portfolio of Jesse Nehemiah Onyango, a Software Engineer and Full Stack Developer.">
+  <meta property="twitter:image" content="https://yourwebsite.com/mime.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+  <!-- FontAwesome for Social Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50">
+      <!-- Navbar Section -->
+      <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold text-gray-900">Jesse Onyango</a>
+                </div>
+
+                <!-- Navigation Links (hidden on small screens) -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-gray-900">About</a>
+                    <a href="#projects" class="text-gray-700 hover:text-gray-900">Projects</a>
+                    <a href="#skills" class="text-gray-700 hover:text-gray-900">Skills</a>
+                    <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button (visible on small screens) -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-4 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block text-gray-700 hover:bg-gray-200 rounded-md py-2">About</a>
+                <a href="#projects" class="block text-gray-700 hover:bg-gray-200 rounded-md py-2">Projects</a>
+                <a href="#skills" class="block text-gray-700 hover:bg-gray-200 rounded-md py-2">Skills</a>
+                <a href="#contact" class="block text-gray-700 hover:bg-gray-200 rounded-md py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Section -->
+    <header class="relative bg-white w-full min-h-screen flex flex-col justify-center items-center py-8 px-4">
+      <div class="mb-4 py-7">
+        <img src="/mime.jpg" alt="Profile" class="w-32 h-32 rounded-full mb-8 border-4 border-gray-300 shadow-lg" />
+      </div>
+      <div class="text-center mb-12">
+        <h1 class="text-3xl font-bold text-gray-900 mb-4">Hello! I'm Jesse Nehemiah Onyango</h1>
+        <p class="text-xl text-gray-700 mb-8">A Software Engineer/Full Stack Developer based in Kiambu, Kenya</p>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="flex justify-center items-center space-x-4 p-4">
+        <a href="https://web.facebook.com/profile.php?id=100089091364174" target="_blank" rel="noopener noreferrer" class="p-3 bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-gray-200 transition-colors">
+          <i class="fab fa-facebook-f text-gray-700 text-lg"></i>
+        </a>
+        <a href="https://twitter.com/itsjessenesh" target="_blank" rel="noopener noreferrer" class="p-3 bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-gray-200 transition-colors">
+          <i class="fab fa-twitter text-gray-700 text-lg"></i>
+        </a>
+        <a href="https://instagram.com/itsjesse.nehemiah" target="_blank" rel="noopener noreferrer" class="p-3 bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-gray-200 transition-colors">
+          <i class="fab fa-instagram text-gray-700 text-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nehemiah-onyango/" target="_blank" rel="noopener noreferrer" class="p-3 bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-gray-200 transition-colors">
+          <i class="fab fa-linkedin text-gray-700 text-lg"></i>
+        </a>
+        <a href="https://github.com/NeshJesse/" target="_blank" rel="noopener noreferrer" class="p-3 bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-gray-200 transition-colors">
+          <i class="fab fa-github text-gray-700 text-lg"></i>
+        </a>
+      </div>
+  
+      <!-- CV Button -->
+      <div class="flex space-x-4 py-12 mb-12">
+        <a href="https://drive.google.com/file/d/1n-SfQfHSGV33flepfzvyNSPSUnUefZ62/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-8 py-3 text-black border border-black rounded-full text-lg shadow-md hover:bg-gray-100 transition-colors">
+          See my CV
+        </a>
+      </div>
+    </header>
+  
+    <!-- Technology Stacks Section -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Technology Stacks and Lingo</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Languages -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Languages</h3>
+            <ul class="text-gray-600 list-disc ml-4 space-y-2">
+              <li>Python</li>
+              <li>JavaScript</li>
+            </ul>
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Python frameworks</h2>
+            <ul class="text-gray-600 list-disc ml-4 space-y-2">
+              <li>Flask</li>
+              <li>Django></li>
+            </ul>
+          </div>
+          <!-- Frontend -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Frontend</h3>
+            <ul class="text-gray-600 list-disc ml-4 space-y-2">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <!-- Backend -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Backend</h3>
+            <ul class="text-gray-600 list-disc ml-4 space-y-2">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Sqlite3</li>
+              <li>MySQL</li>
+              <li>GraphQL</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+          <!-- More Stacks (DevOps, App Development, Others) -->
+        </div>
+      </div>
+    </section>
+  
+    <!-- Development Experience Section -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Development Experience</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">React | Flask | Python | APIs</h3>
+            <ul class="space-y-4">
+              <li>
+                <h4 class="font-semibold text-lg">React JS Project Boilerplate</h4>
+                <p class="text-gray-600 mb-2">A boilerplate for building Kenyan SaaS apps using React applications.</p>
+                <a href="https://github.com/NeshJesse/reactjs-suv" class="inline-block px-4 py-2 bg-black text-white rounded">Learn More</a>
+              </li>
+              <li>
+                <h4 class="font-semibold text-lg">Flask Projects Boilerplate</h4>
+                <p class="text-gray-600 mb-2">A template for building Kenyan SaaS apps using Flask and Python.</p>
+                <a href="https://github.com/NeshJesse/flask-suv" class="inline-block px-4 py-2 bg-black text-white rounded">Learn More</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Additional project descriptions for tech stacks like Next.js, Supabase, etc. -->
+         <!-- React | Next.js | Supabase | MongoDB | Vercel -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+          React | Next.js | Supabase | MongoDB | Vercel
+        </h3>
+        <ul class="space-y-6">
+          <li>
+            <h4 class="font-semibold text-lg text-gray-900">Movers</h4>
+            <p class="text-gray-600 mb-2">
+              A platform for booking moving services with real-time tracking and management.
+            </p>
+            <a href="https://github.com/yourusername/movers" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+              Learn More
+            </a>
+          </li>
+          <li>
+            <h4 class="font-semibold text-lg text-gray-900">Shoppy</h4>
+            <p class="text-gray-600 mb-2">
+              An e-commerce platform with real-time product updates and seamless checkout.
+            </p>
+            <a href="https://shoppy-pink.vercel.app/" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+              Learn More
+            </a>
+          </li>
+          <li>
+            <h4 class="font-semibold text-lg text-gray-900">Voice QR</h4>
+            <p class="text-gray-600 mb-2">
+              A QR code generator that converts information into an audio file for accessibility.
+            </p>
+            <a href="https://voiceqr.vercel.app/" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+              Learn More
+            </a>
+          </li>
+          <li>
+            <h4 class="font-semibold text-lg text-gray-900">QuickCart</h4>
+            <p class="text-gray-600 mb-2">
+              A shopping cart system with integration to Supabase for user management.
+            </p>
+            <a href="https://github.com/NeshJesse/quickcart" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+              Learn More
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- React Native with Expo -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+          React Native with Expo
+        </h3>
+        <ul class="space-y-6">
+          <li>
+            <h4 class="font-semibold text-lg text-gray-900">Face ID Application</h4>
+            <p class="text-gray-600 mb-2">
+              A mobile app that integrates Face ID authentication using React Native and Expo.
+            </p>
+            <a href="https://github.com/yourusername/face-id-app" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+              Learn More
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Flutter with MongoDB | SQLite -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+          Flutter with MongoDB | SQLite
+        </h3>
+        <ul class="space-y-6">
+          <li>
+            <h4 class="font-semibold text-lg text-gray-900">News App</h4>
+            <p class="text-gray-600 mb-2">
+              A news aggregator app built using Flutter with offline support via SQLite.
+            </p>
+            <a href="https://github.com/NeshJesse/news_app" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+              Learn More
+            </a>
+          </li>
+          <li>
+            <h4 class="font-semibold text-lg text-gray-900">Price Comparison</h4>
+            <p class="text-gray-600 mb-2">
+              An app that compares prices from multiple online stores using MongoDB and Flutter.
+            </p>
+            <a href="https://github.com/yourusername/price-comparison" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+              Learn More
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Toggle mobile menu visibility
+      document.getElementById('menu-toggle').onclick = function() {
+          const menu = document.getElementById('mobile-menu');
+          menu.classList.toggle('hidden');
+      };
+  </script>
+  </body>
+  </html>
