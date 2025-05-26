@@ -24,13 +24,14 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   
   <!-- FontAwesome for Social Icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+
 </head>
 <body class="bg-gray-50">
       <!-- Navbar Section -->
       <nav class="bg-white shadow-md fixed w-full z-10">
-        <div class="flex container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
+        <div class="flex container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+            <div class="flex h-16">
                 
                 <!-- Logo -->
                 <div class="flex-shrink-0">
@@ -39,11 +40,22 @@
                 </div>
 
             </div>
-            <div class="flex flex-row  h-16 px-8 py-6 gap-4 text-xl font-semibold  hover:bg-blue-100 transition-colors">
-              <a href="#skills">Skills</a>
-            <a href="#projects">Projects Built</a>
-            <a href="#prof">Professional Experience</a>
+            
+            /*
+            <div class="flex items-center justify-end flex-1 sm:hidden">
+                
             </div>
+            <!-- Desktop Menu -->
+            
+            <!-- Mobile Menu -->
+            <div class="sm:hidden flex items-center justify-end flex-1">
+                
+              </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden sm:hidden absolute top-16 right-0 w-full bg-white shadow-lg z-20">
+               
+              </div>
+              
             
         </div>
 
@@ -350,11 +362,71 @@
       </div>
       
     </section>
+    <!--Educational Background-->
+    <section id="education" class="bg-gray-100 py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Educational Background</h2>
+        <div class="space-y-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Bachelor of Science in Computer Science</h3>
+            <p class="text-gray-600 mb-2">Jomo Kenyatta University of Agriculture and Technology, Kenya</p>
+            <p class="text-gray-600">Expected Graduation: 2024</p>
+          </div>
+          <!-- Additional educational experiences can be added here -->
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-white py-8">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="text-gray-600">© 2024 Jesse Nehemiah Onyango. All rights reserved.</p>
+        <p class="text-gray-600">Built with ❤️ using Tailwind CSS</p>
+      </div>
+    </footer>
+  <!-- Mobile Menu Toggle --> 
+  <div class="fixed top-0 right-0 p-4 z-20">
+      <button id="menu-toggle" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+      </button>
+  </div>
+  <!-- Mobile Menu -->  
+  <!-- Mobile Menu will be dynamically added here -->
+  <div id="mobile-menu-container"></div>
+  <!-- JavaScript for Mobile Menu Toggle -->
+
+
     <script>
       // Toggle mobile menu visibility
       document.getElementById('menu-toggle').onclick = function() {
+          const container = document.getElementById('mobile-menu-container');
+          if (!container.innerHTML) {
+              container.innerHTML = `
+                  <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 z-30">
+                      <div class="flex flex-col items-center justify-center h-full space-y-6 text-white">
+                          <a href="#skills" class="text-xl">Skills</a>
+                          <a href="#projects" class="text-xl">Projects Built</a>
+                          <a href="#prof" class="text-xl">Professional Experience</a>
+                          <a href="#education" class="text-xl">Education</a>
+                      </div>
+                  </div>
+              `;
+          } else {
+              container.innerHTML = '';
+          }
+      };
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', function(event) {
           const menu = document.getElementById('mobile-menu');
-          menu.classList.toggle('hidden');
+          const toggleButton = document.getElementById('menu-toggle');
+          if (menu && !menu.contains(event.target) && !toggleButton.contains(event.target)) {
+              document.getElementById('mobile-menu-container').innerHTML = '';
+          }
+      });
+      // Close mobile menu on link click
+      document.getElementById('mobile-menu-container').onclick = function(event) {
+          if (event.target.tagName === 'A') {
+              document.getElementById('mobile-menu-container').innerHTML = '';
+          }
       };
   </script>
   </body>
