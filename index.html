@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jesse Nehemiah Onyango | Software Engineer</title>
+  <title>Nehemiah's Portfolio</title>
   <meta name="description" content="Portfolio of Jesse Nehemiah Onyango, a Software Engineer and Full Stack Developer based in Kiambu, Kenya. Specializes in React, Next.js, Flask, and more.">
   
   <!-- Open Graph / Facebook -->
@@ -29,21 +29,28 @@
 <body class="bg-gray-50">
       <!-- Navbar Section -->
       <nav class="bg-white shadow-md fixed w-full z-10">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <a href="#home" class="text-2xl font-bold text-gray-900">Jesse Onyango</a>
+                    <a href="#home" class="text-2xl font-bold text-gray-900">Nehemiah Onyango</a>
+                    
                 </div>
 
             </div>
+            <div class="flex flex-row  h-16 px-8 py-6 gap-4 text-xl font-semibold  hover:bg-blue-100 transition-colors">
+              <a href="#skills">Skills</a>
+            <a href="#projects">Projects Built</a>
+            <a href="#prof">Professional Experience</a>
+            </div>
+            
         </div>
 
       
     </nav>
     <!-- Header Section -->
-    <header class="relative bg-white w-full min-h-screen flex flex-col justify-center items-center py-8 px-4">
+    <header class="relative bg-white w-full min-h-screen flex flex-col justify-center items-center py-4 px-4">
       <div class="mb-4 py-7">
         <img src="photo.jpg" alt="Profile" class="w-32 h-32 rounded-full mb-8 border-4 border-gray-300 shadow-lg" />
       </div>
@@ -53,8 +60,8 @@
       </div>
   
       <!-- Social Media Links -->
-<div class="flex justify-center items-center gap-4 p-4 bg-gray-50">
-  <a 
+   <div class="flex justify-center items-center gap-4 p-4 bg-gray-50">
+     <a 
     href="https://www.linkedin.com/in/nehemiah-onyango/" 
     target="_blank" 
     rel="noopener noreferrer" 
@@ -64,8 +71,8 @@
       alt="LinkedIn Icon" 
       class="w-6 h-6" />
     <span class="text-xl text-gray-700">LinkedIn</span>
-  </a>
-  <a 
+   </a>
+   <a 
     href="https://github.com/NeshJesse/" 
     target="_blank" 
     rel="noopener noreferrer" 
@@ -75,12 +82,12 @@
       alt="GitHub Icon" 
       class="w-6 h-6" />
     <span class="text-xl text-gray-700">GitHub</span>
-  </a>
-</div>
+   </a>
+ </div>
 
   
       <!-- CV Button -->
-      <div class="flex space-x-4 py-12 mb-12">
+      <div class="flex space-x-4 py-5 mb-8">
         <a href="https://docs.google.com/document/d/1moNKlrKkvAVEM3W6O7LnK9E-BCE-wJji/edit?usp=sharing&ouid=106698259757887259177&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="px-8 py-3 text-black border border-black rounded-full text-lg shadow-md hover:bg-gray-100 transition-colors">
           See my CV
         </a>
@@ -88,7 +95,7 @@
     </header>
   
     <!-- Technology Stacks Section -->
-    <section class="bg-gray-100 py-16">
+    <section id="skills" class="bg-gray-100 py-16">
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Technology Stacks and Lingo</h2>
         <div class="grid md:grid-cols-3 gap-8">
@@ -131,24 +138,46 @@
           <div class="bg-white p-6 rounded-lg shadow-lg">
             <h3 class="text-xl font-semibold text-gray-800 mb-4">Backend and Databases</h3>
             <ul class="text-gray-600 list-disc ml-4 space-y-2">
+              <li>REST APIs</li>
               <li>Node.js</li>
               <li>Express</li>
               <li>MongoDB</li>
               <li>Sqlite3</li>
               <li>MySQL</li>
-              <li>REST APIs</li>
+              <li>Supabase</li>
+              <li>PostgreSQL</li>
+              <li>Nginx</li>
             </ul>
           </div>
           <!-- More Stacks (DevOps, App Development, Others) -->
-          
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Industry Tools</h3>
+            <ul class="text-gray-600 list-disc ml-4 space-y-2">
+              <li>Canva</li>
+              <li>Microsoft Office Suite</li>
+              <li>Google Workspace</li>
+              <li>Jira</li>
+              <li>Scrum</li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Containerization and DevOps</h3>
+            <ul class="text-gray-600 list-disc ml-4 space-y-2">
+              <li>Version Control: Git, GitHub</li>
+              <li>CI/CD: GitHub Actions, Vercel</li>
+              <li>Cloud Platforms: Vercel, Netlify</li>
+
+              <li>Containerization: Docker, Docker Compose </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
   
     <!-- Development Experience Section -->
-    <section class="bg-gray-100 py-16">
+    <section id="projects"class="bg-gray-100 py-16">
       <div class="max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Development Experience</h2>
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Projects Built</h2>
         <div class="grid md:grid-cols-2 gap-8">
           <div class="bg-white p-6 rounded-lg shadow-lg">
             <h3 class="text-xl font-semibold text-gray-800 mb-4">React | Flask | Python | APIs</h3>
@@ -175,34 +204,34 @@
           <li>
             <h4 class="font-semibold text-lg text-gray-900">Movers</h4>
             <p class="text-gray-600 mb-2">
-              A platform for booking moving services with real-time tracking and management.
+             A simple website for a residential moving services company
             </p>
             <a href="https://github.com/yourusername/movers" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
               Learn More
             </a>
           </li>
           <li>
-            <h4 class="font-semibold text-lg text-gray-900">Shoppy</h4>
+            <h4 class="font-semibold text-lg text-gray-900">Patriot</h4>
             <p class="text-gray-600 mb-2">
-              An e-commerce platform with real-time product updates and seamless checkout.
+              A web app that allows NGO'S to organize and manage peacefull demonstrations
             </p>
-            <a href="https://shoppy-pink.vercel.app/" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+            <a href="https://patriot.vercel.app/" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
               Learn More
             </a>
           </li>
           <li>
             <h4 class="font-semibold text-lg text-gray-900">Voice QR</h4>
             <p class="text-gray-600 mb-2">
-              A QR code generator that converts information into an audio file for accessibility.
+              An app that allows users to store voice notes & messages in physical media e.g. pictures using qr codes
             </p>
             <a href="https://voiceqr.vercel.app/" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
               Learn More
-            </a>
+            </a>`
           </li>
           <li>
             <h4 class="font-semibold text-lg text-gray-900">QuickCart</h4>
             <p class="text-gray-600 mb-2">
-              A shopping cart system with integration to Supabase for user management.
+              A B2B app that allows e-commerce website visitors to order and pay for goods quicker than normal navigation via a Chat UI
             </p>
             <a href="https://github.com/NeshJesse/quickcart" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
               Learn More
@@ -231,6 +260,15 @@
 
       <!-- Flutter with MongoDB | SQLite -->
       <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3>
+          Campus Navigation App
+        </h3>
+        <p class="text-gray-600 mb-2">
+          An app that helps JKUAT campus to students navigate around campus and find key locations for their classes
+        </p>
+        <a href="https://github.com/NeshJesse/JKATMAP" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+          Learn More
+        </a>
         <h3 class="text-2xl font-semibold text-gray-800 mb-4">
           Flutter with MongoDB | SQLite
         </h3>
@@ -249,17 +287,68 @@
             <p class="text-gray-600 mb-2">
               An app that compares prices from multiple online stores using MongoDB and Flutter.
             </p>
-            <a href="https://github.com/yourusername/price-comparison" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+            <a href="https://github.com/NeshJesse/saka_price" class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
               Learn More
             </a>
           </li>
         </ul>
       </div>
-
+      <div class="flex space-x-4 py-5 mb-8">
+        <a href="https://github.com/NeshJesse/" class="px-8 py-3 bg-white text-black border border-black rounded-full text-lg shadow-md hover:bg-gray-100 transition-colors">
+          See More projects
+        </a>
+      </div>
     </div>
   </div>
         </div>
       </div>
+    </section>
+    <!--Professional Experience-->
+    <section id="prof" class="bg-gray-100 py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Professional Experience</h2>
+        <div class="space-y-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">SIMU ATM, Kenya -  Mobile Developer Part Time</h3>
+            <p class="text-gray-600 mb-2">Developed an app that allows users to interact with ATM terminals using QR code technologies as a team leader.</p>
+            <p class="text-gray-600">Utilized React Native with Expo with REST API’S inorder to foster quick cross platform deployment .</p>
+          </div>
+          <!-- Additional professional experiences can be added here -->
+        </div>
+        <div class="space-y-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Freelance Contract, Kenya -  Machine Learning Specialist Part Time</h3>
+            <p class="text-gray-600 mb-2">
+              Spearheaded the development of facial recognition models to enhance website security measures, ensuring controlled access to resources.
+
+            </p>
+            <p class="text-gray-600">
+              Successfully trained and deployed facial recognition models within Django and Flask frameworks, demonstrating proficiency in both frontend ,backend development and machine learning integration.
+            </p>
+          </div>
+          <!-- Additional professional experiences can be added here -->
+        </div>
+        <div class="space-y-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4"> Freelance Contract, Kenya - Junior Full stack Developer </h3>
+            <p class="text-gray-600 mb-2">
+              Led the creation of diverse projects using a range of technologies, including HTML5, React JS, Next Js, Node JS, and Bootstrap, showcasing versatility in front-end development.</p>
+            <p class="text-gray-600">
+              Utilized Django and Flask frameworks for backend development, contributing to the seamless execution of web applications.
+            </p>
+            <p class="text-gray-600">
+              Employed XAMPP and LAMP tech stacks to ensure robust and reliable web solutions.
+            </p>
+            <p class="text-gray-600">
+              Played a key role in delivering successful projects, demonstrating strong problem-solving skills and a commitment to excellence.
+            </p>
+          </div>
+         
+
+        </div>
+        
+      </div>
+      
     </section>
     <script>
       // Toggle mobile menu visibility
